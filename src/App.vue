@@ -1,30 +1,29 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="nav" class="bg-orange w-auto h-1/2 mx-auto flex flex-row item-center  ">
+    <ul class="text-white">
+      <li class=" px-16 py-3 font-normal text-3xl">
+        <span><b>Nyanko Cafe</b></span>
+      </li>
+    </ul>
+    <div class=" flex-grow">
+
+    </div>
+    <ul class="my-auto mr-20 flex flex-row item-end justify-center h-full text-white text-sm">
+
+      <li class="px-3 py-3 ">
+        <router-link to="/"> <span><b>Home</b></span>
+        </router-link>
+      </li>
+      <li class="pl-3 px-3 py-3">
+      <router-link to="/product"> 
+        <span><b>Product</b></span></router-link>
+      </li>
+      <li class="pl-3 px-3 py-3">
+      <router-link to="/about"> 
+        <span><b>About</b></span></router-link>
+      </li>
+    </ul>
+
   </div>
-  <router-view/>
+  <router-view />
 </template>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
